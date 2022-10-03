@@ -32,6 +32,7 @@ print("** What would you like to order? **")
 print("***********************************")
 keyword= "quit"
 num=0
+yourorder=[]
 while True :
  
  order = input("> ")
@@ -40,9 +41,12 @@ while True :
     break
  if order in menu : 
     num+=1
+    yourorder.append(order)
     print(f"** {num} order of {order} have been added to your meal **")
  else : 
     print("**           item is not on the menu           **")
+
+print(f"your order is {yourorder}")
  
 
     
