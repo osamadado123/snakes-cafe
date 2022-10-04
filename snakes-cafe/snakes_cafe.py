@@ -31,7 +31,7 @@ print("***********************************")
 print("** What would you like to order? **")
 print("***********************************")
 keyword= "quit"
-num=0
+
 yourorder=[]
 while True :
  
@@ -39,10 +39,10 @@ while True :
  
  if order == keyword :
     break
- if order in menu : 
-    num+=1
+ if order.capitalize() in menu : 
+    
     yourorder.append(order)
-    print(f"** {num} order of {order} have been added to your meal **")
+    print(f"** 1 order of {order} have been added to your meal **")
  else : 
     print("**           item is not on the menu           **")
 
